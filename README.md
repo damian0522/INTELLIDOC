@@ -1,6 +1,6 @@
-# DocuMind AI API
+# IntelliDoc AI API
 
-Backend desarrollado para la plataforma **DocuMind AI**, un sistema inteligente de procesamiento documental basado en Inteligencia Artificial y tecnologías Cloud.
+Backend desarrollado para la plataforma **IntelliDoc AI**, un sistema inteligente de procesamiento documental basado en Inteligencia Artificial y tecnologías Cloud.
 
 El proyecto hace parte del desarrollo del proyecto de prácticas empresariales de Ingeniería de Software y tiene como objetivo automatizar el procesamiento de documentos mediante una arquitectura escalable basada en Azure Cloud y Clean Architecture.
 
@@ -40,7 +40,7 @@ La aplicación cliente será desarrollada utilizando el patrón MVC y consumirá
 # Estructura del Proyecto
 
 ```
-com.documind.api
+com.intellidoc.api
 
 ├── application
 │   ├── dto
