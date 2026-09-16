@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: intellidoc
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/intellidoc_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+azure:
+  storage:
+    account-name: ${AZURE_STORAGE_ACCOUNT_NAME}
+    container-name: intellidoc-documents
+
+  openai:
+    endpoint: ${AZURE_OPENAI_ENDPOINT}
+    deployment: ${AZURE_OPENAI_DEPLOYMENT}
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+  endpoint:
+    health:
+      show-details: never
